@@ -42,17 +42,17 @@ This repository contains the complete mechanical design package for **[Device Na
 <table>
   <tr>
     <td width="50%">
-      <img src="docs/images/render_front.png" alt="Front rendered view" width="100%">
+      <img src="https://github.com/rihaanshsaraswat05/CYCLOIDAL-GEARBOX-/blob/main/photos/renderd%201.png" alt="Front rendered view" width="100%">
       <p align="center"><b>Front Isometric Render</b><br>[Short description — e.g. "Assembled gearbox showing the twin-disc cycloidal stage and output flange."]</p>
     </td>
     <td width="50%">
-      <img src="docs/images/render_exploded.png" alt="Exploded rendered view" width="100%">
+      <img src="https://github.com/rihaanshsaraswat05/CYCLOIDAL-GEARBOX-/blob/main/photos/rendered%202.png" alt="Exploded rendered view" width="100%">
       <p align="center"><b>Exploded View Render</b><br>[Short description — e.g. "Exploded assembly highlighting bearing placement, ring pins, and disc stack order."]</p>
     </td>
   </tr>
   <tr>
     <td colspan="2">
-      <img src="docs/images/drawing_2d.png" alt="2D engineering drawing" width="100%">
+      <img src="https://github.com/rihaanshsaraswat05/CYCLOIDAL-GEARBOX-/blob/main/photos/drawing%20info.png" alt="2D engineering drawing" width="100%">
       <p align="center"><b>2D Engineering Drawing</b><br>[Short description — e.g. "Full manufacturing drawing of the [part name] with critical dimensions, tolerances, and section views."]</p>
     </td>
   </tr>
