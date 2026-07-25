@@ -3,7 +3,7 @@
 <!--  Replace all [PLACEHOLDER] text and image paths before pushing.  -->
 <!-- ================================================================ -->
 
-<h1 align="center">[Reinforced cycloidal gearbox]</h1>
+<h1 align="center">[3D PRINTED cycloidal gearbox]</h1>
 <p align="center">
   <em>["30:1 Cycloidal Gearbox for steering , actuation joints of arm link1 & 2 Mars Rover"]</em>
 </p>
@@ -20,7 +20,7 @@
 
 This repository contains the complete mechanical design package for **[CGB]**, developed by **[RIHAANSH SARASWAT MECH LEAD]**. It includes native CAD source files, manufacturing-ready drawings, 3D-printable/exportable mesh files, and full assembly documentation.
 
-**Use case:THIS GEAR BOX IS A PROTOTYPE VERSION OF THE MARKET LEVEL CYCLOIDAL GEARBOX WITH 3D PRINTED CARBON FIBER INDUCED FILAMENT IT PROVIDES AN IDEAL 30:1 GEAR REDUCTION USING 2 PHASE CYCLOIDAL DISCS IWTH 31 RING PINS AND 6 DOWEL PINS THIS VERSION USES A NON BACKDRIVABLE WORM GEARED MOTOR AND A FLEXIBLE JAY COUPLING IN ORDER TO TEST AND MALFUCTION FOR ANY USE** [1–2 sentences on what this device does and where it's used — e.g. "This gearbox reduces motor output speed by 30:1 to drive the rover's wheel hubs, providing high torque density in a compact housing suitable for the rocker-bogie suspension."]
+**Use case:THIS GEAR BOX IS A PROTOTYPE VERSION OF THE MARKET LEVEL CYCLOIDAL GEARBOX WITH 3D PRINTED CARBON FIBER INDUCED FILAMENT IT PROVIDES AN IDEAL 30:1 GEAR REDUCTION USING 2 PHASE CYCLOIDAL DISCS IWTH 31 RING PINS AND 6 DOWEL PINS THIS VERSION USES A NON BACKDRIVABLE WORM GEARED MOTOR AND A FLEXIBLE JAY COUPLING IN ORDER TO TEST AND MALFUCTION FOR ANY USE** 
 
 ### 📁 Repository Structure
 
