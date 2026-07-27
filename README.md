@@ -53,37 +53,40 @@ This repository contains the complete mechanical design package for **[CGB]**, d
   <tr>
     <td colspan="2">
       <img src="https://github.com/rihaanshsaraswat05/CYCLOIDAL-GEARBOX-/blob/main/photos/drawing%20info.png" alt="2D engineering drawing" width="100%">
-      <p align="center"><b>2D Engineering Drawing</b><br>[Short description — e.g. "Full manufacturing drawing of the [part name] with critical dimensions, tolerances, and section views."]</p>
+      <p align="center"><b>2D Engineering Drawing</b><br>[Short description — e.g. "Full manufacturing drawing of the Cycloidal gearbox with critical dimensions, tolerances, and section views."]</p>
     </td>
   </tr>
 </table>
 
 ---
 
-## 🧱 Material Information
+## Manufacturing Details
 
-| Part | Material | Grade / Spec | Notes |
-|---|---|---|---|
-| [Housing] | [Aluminium] | [6061-T6] | Anodized for corrosion resistance |
-| [Cycloidal Disc] | [Steel] | [EN8 / SS304] | Hardened surface preferred for pin contact |
-| [Ring Pins] | [Stainless Steel] | [SS304, 6mm dia] | Ground finish for low friction |
-| [Bearings] | [Chrome Steel] | [6902 series] | Sealed / shielded as specified |
-| [Fasteners] | [Stainless Steel] | [A2-70] | — |
-| [Output Shaft] | [Steel] | [EN24 / 4340] | — |
+| Part | Manufacturing Process | Material | Specifications | Notes |
+|------|------------------------|----------|----------------|-------|
+| **Bottom Plate** | FDM 3D Printing | PLA | 0.20 mm layer height, 70–80% infill | Print with the mounting face on the build plate. Ensure bearing bores are dimensionally accurate. Avoid support material inside bearing seats. |
+| **Top Plate** | FDM 3D Printing | PLA | 0.20 mm layer height, 70–80% infill | Print with the bearing seat facing upward for better dimensional accuracy. |
+| **Cycloidal Disc** | FDM 3D Printing | PLA-CF / PPA-CF | 0.16–0.20 mm layer height, 80–100% infill | Print flat on the build plate. High-strength material is required due to continuous pin contact and wear. |
+| **Output Shaft** | FDM 3D Printing | PPA-CF / PLA-CF | 0.16–0.20 mm layer height, 60–80% infill | Print vertically with 4–6 walls to maximize strength around the bearing seats. |
+| **Eccentric Shaft** | FDM 3D Printing | PPA-CF / PLA-CF | 0.16–0.20 mm layer height, 60–80% infill | Print vertically with thick walls for maximum concentricity and strength. |
+| **External Hub** | FDM 3D Printing | PLA | 0.20 mm layer height, 40–60% infill | Medium infill is sufficient. Ensure proper fit with the ring pins. |
+| **Ring Pins** | CNC Turning / Precision Ground Rod | SS304 Stainless Steel | Ø6 mm Ground Rod | Maintain tight diameter tolerance and smooth surface finish for low friction. |
+| **External Shaft** | CNC Turning | SS304 Stainless Steel | As per drawing | Maintain interference fit dimensions with the 10 mm shaft. |
+| **10 mm Shaft** | CNC Turning | SS304 Stainless Steel | Ø10 mm | Ensure accurate bearing and coupler fit with smooth surface finish. |
+| **Bearings** | Standard Purchased Component | Chrome Steel | 6902 Series | Use sealed/shielded bearings. Avoid applying assembly force through the rolling elements. |
+| **Fasteners** | Standard Purchased Component | Stainless Steel | A2-70 | Use the specified tightening torque during final assembly. |
+| **Coupler** | Standard Purchased Component | Aluminum | Flexible Shaft Coupler | Select bore sizes according to the motor shaft and 10 mm shaft dimensions. |
+| **Thrust Washer** | Standard Purchased Component | Hardened Steel | Ø10 mm ID | Lubricate lightly with silicone spray during assembly. |
 
-> Replace with your actual part list. Include hardness, surface finish, and any heat-treatment requirements where relevant.
-
----
-
-## 🏭 Manufacturing Details
-
-| Part | Process | Machine / Method | Tolerance | Notes |
-|---|---|---|---|---|
-| [Housing] | CNC Milling | 3-axis mill | ±0.05 mm | Requires 2 setups (front/back face) |
-| [Cycloidal Disc] | Laser / Wire-EDM cutting | Wire-EDM | ±0.02 mm | Tight tolerance on lobe profile |
-| [Ring Pins] | Turning | Lathe | ±0.02 mm | Ground OD for press-fit |
-| [Output Flange] | CNC Milling + Drilling | 3-axis mill | ±0.05 mm | Deburr all edges before assembly |
-| [Custom Bracket] | Sheet metal cutting + bending | Laser cutter + brake press | ±0.1 mm | DXF provided in `Drawings/` |
+> **Manufacturing Notes**
+>
+> - Deburr all machined components before assembly.
+> - Verify all press-fit dimensions before installing bearings and shafts.
+> - Clean all bearing seats and shaft surfaces before assembly.
+> - Apply silicone spray only to the shaft and thrust washer interface; avoid contaminating bearing races.
+> - Check dimensional tolerances of all 3D-printed parts before assembly, especially bearing bores, shaft holes, and ring pin holes.
+> - Ream printed holes if necessary to achieve the specified interference or clearance fit.
+> - Inspect printed parts for warping or layer separation before use.
 
 **General notes:**
 - All drawings in `Drawings/` include full GD&T callouts — always manufacture from these, not raw CAD geometry.
@@ -93,12 +96,29 @@ This repository contains the complete mechanical design package for **[CGB]**, d
 
 ## 🔧 Assembly Information
 
-1. [Step 1 — e.g. "Press bearings into the housing bore using an arbor press; support the housing on the outer race only."]
-2. [Step 2 — e.g. "Insert the eccentric shaft through the bearings."]
-3. [Step 3 — e.g. "Mount the twin cycloidal discs with a 180° phase offset onto the eccentric bushings."]
-4. [Step 4 — e.g. "Install ring pins into the housing, ensuring even spacing per the drawing."]
-5. [Step 5 — e.g. "Fit the output flange and secure with fasteners per the specified torque sequence."]
-6. [Step 6 — e.g. "Verify free rotation by hand before final closure of the housing."]
+1. **Mount the shaft coupler** onto the motor shaft, ensuring proper alignment and securely tightening the set screws as per the specified torque.
+
+2. **Press-fit the bearings** into the bottom plate using an arbor or hydraulic press, ensuring force is applied only to the bearing's outer race.
+
+3. **Press-fit the ring pins** into the bottom plate and simultaneously install the external hub, ensuring all pins are fully seated and positioned according to the assembly drawing.
+
+4. **Press-fit the external shaft** onto the 10 mm shaft, ensuring proper alignment and a secure interference fit.
+
+5. **Press-fit the 15 mm bearing** onto the eccentric shaft by applying force only to the bearing's inner race.
+
+6. **Insert the 10 mm shaft** into the bottom plate while installing the 10 mm thrust washer. Apply a light coating of silicone spray to the mating surfaces to facilitate assembly and reduce friction.
+
+7. **Mount the motor** onto the bottom plate and connect it to the shaft using the pre-installed coupler. Secure the motor with the specified fasteners.
+
+8. **Install the cycloidal discs** onto the eccentric shaft, ensuring the discs are correctly oriented and phased according to the design.
+
+9. **Press-fit the bearings** into the output shaft and install all 8 mm dowel pins in their designated locations.
+
+10. **Assemble the output shaft** with the cycloidal discs and install the output shaft support, ensuring smooth engagement of all output pins.
+
+11. **Press-fit the bearings** into the top plate, applying force only to the bearing's outer race.
+
+12. **Assemble the top plate** onto the output shaft assembly, align all mounting holes, and secure the complete gearbox using the long M4 bolts. Tighten the bolts uniformly in a crisscross sequence using a drill machine, followed by final torque tightening as specified.
 
 Refer to the exploded render above and the assembly drawing in `Drawings/` for exact part orientation and fastener callouts.
 
@@ -117,9 +137,8 @@ Refer to the exploded render above and the assembly drawing in `Drawings/` for e
 ---
 
 ## 📄 License
-
-[Specify license, e.g. MIT — see `LICENSE` file for details.]
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## 🙌 Credits
 
-Developed by **[Team Name]**, [Institution/Organization].
+Developed by **RIHAANSH SARASWAT**, TEAM DEIMOS , IIT MANDI.
